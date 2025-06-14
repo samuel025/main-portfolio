@@ -98,6 +98,8 @@ export default function About() {
                     { name: "React.js", icon: techIcons.React },
                     { name: "NextJS", icon: techIcons.Next },
                     { name: "Git", icon: techIcons.Git },
+                    { name: "MongoDB", icon: techIcons.MongoDB },
+                    { name: "PostgreSQL", icon: techIcons.PostgreSQL },
                   ].map((tech) => (
                     <div
                       key={tech.name}

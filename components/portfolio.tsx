@@ -3,10 +3,25 @@ import { Github } from "lucide-react";
 
 const projects = [
   {
+    title: "Real Estate Tokenization Platform",
+    description:
+      "A blockchain based real estate platform where users can by shares of properties onchain.",
+    image: "contract/1.png",
+    images: [
+      "/contract/3.png",
+      "/contract/1.png",
+      "/contract/image.png",
+      "/contract/2.png",
+    ], // Added images array
+    gradient: "bg-gradient-to-br from-green-500 to-blue-600",
+    github: "https://github.com/yourusername/ecommerce",
+    demo: "https://ecommerce-demo.com",
+    tags: ["NextJS", "React", "ThirdWeb", "Arbitrum"],
+  },
+  {
     title: "School Management System",
     description:
       "A comprehensive school management system with features for students, teachers, and administrators.",
-    date: "July 2021",
     image: "school/ground.png",
     images: [
       "/school/ground.png",
@@ -16,27 +31,25 @@ const projects = [
     gradient: "bg-gradient-to-br from-blue-500 to-purple-600",
     github: "https://github.com/yourusername/school-management",
     demo: "https://school-demo.com",
-    tags: ["React", "Django", "PostgreSQL"],
+    tags: ["HTML/CSS", "Django", "PostgreSQL"],
   },
   {
     title: "Online Ecommerce Website",
     description:
       "A full-featured ecommerce platform with payment integration and order management.",
-    date: "September 2021",
     image: "ecom/ecommerce.png",
     images: ["/ecom/ecom2.png", "/ecom/ecom3.png", "/ecom/ecommerce.png"], // Added images array
     gradient: "bg-gradient-to-br from-green-500 to-blue-600",
     github: "https://github.com/yourusername/ecommerce",
     demo: "https://ecommerce-demo.com",
-    tags: ["NextJS", "Stripe", "TailwindCSS"],
+    tags: ["HTML", "CSS", "Django", "PostgreSQL"],
   },
   {
     title: "A micro-blog app",
     description:
-      "A full-featured ecommerce platform with payment integration and order management.",
-    date: "September 2021",
-    image: "ecom/ecommerce.png",
-    images: ["/ecom/ecom2.png", "/ecom/ecom3.png", "/ecom/ecommerce.png"], // Added images array
+      "A micro blogging app with CRUD features for posts. It also has likes and comments functionalities .",
+    image: "blog/blog.png",
+    images: ["/blog/blog2.png", "/blog/blog.png", "/blog/blog3.png"], // Added images array
     gradient: "bg-gradient-to-br from-green-500 to-blue-600",
     github: "https://github.com/yourusername/ecommerce",
     demo: "https://ecommerce-demo.com",
