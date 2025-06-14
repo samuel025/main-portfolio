@@ -31,7 +31,7 @@ export default function Contact() {
                   href="mailto:sam_olayemi65@yahoo.com"
                   className="text-gray-400 hover:text-blue-400 transition-colors"
                 >
-                  sam_olayemi65@yahoo.com
+                  samolayemi3@gmail.com
                 </a>
               </div>
             </div>

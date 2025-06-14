@@ -14,9 +14,20 @@ const projects = [
       "/contract/2.png",
     ], // Added images array
     gradient: "bg-gradient-to-br from-green-500 to-blue-600",
-    github: "https://github.com/yourusername/ecommerce",
-    demo: "https://ecommerce-demo.com",
+    github: "https://github.com/samuel025/Xuel-TokenizationPlatform",
+    demo: "https://realestate-tokenization.vercel.app/",
     tags: ["NextJS", "React", "ThirdWeb", "Arbitrum"],
+  },
+  {
+    title: "Online Cloth Store",
+    description:
+      "A full-featured ecommerce platform with payment integration and order management.",
+    image: "ecom2/1.png",
+    images: ["/ecom2/2.png", "/ecom2/1.png", "/ecom2/3.png", "/ecom2/4.png"], // Added images array
+    gradient: "bg-gradient-to-br from-green-500 to-blue-600",
+    github: "https://github.com/samuel025/Django-Ecommerce-App",
+    demo: "#",
+    tags: ["HTML", "CSS", "Django", "PostgreSQL"],
   },
   {
     title: "School Management System",
@@ -27,10 +38,10 @@ const projects = [
       "/school/ground.png",
       "/school/ground1.png",
       "/school/ground2.png",
-    ], // Added images array
+    ],
     gradient: "bg-gradient-to-br from-blue-500 to-purple-600",
-    github: "https://github.com/yourusername/school-management",
-    demo: "https://school-demo.com",
+    github: "https://github.com/samuel025/School-System/",
+    demo: "#",
     tags: ["HTML/CSS", "Django", "PostgreSQL"],
   },
   {
