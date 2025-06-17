@@ -93,7 +93,7 @@ export default function Portfolio() {
 
         <div className="text-center mt-16">
           <a
-            href="https://github.com/yourusername"
+            href="https://github.com/samuel025"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center px-6 py-3 rounded-full bg-gray-900 text-white font-medium hover:bg-gray-800 transition-colors"
