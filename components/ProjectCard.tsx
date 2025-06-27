@@ -1,7 +1,7 @@
 "use client";
 import { useState } from "react";
 import Image from "next/image";
-import { ExternalLink, Github } from "lucide-react";
+import { ExternalLink, Github, Award } from "lucide-react";
 
 import "swiper/css";
 import "swiper/css/navigation";
@@ -16,6 +16,7 @@ interface ProjectCardProps {
   github?: string;
   demo?: string;
   tags: string[];
+  isAwardWinner?: boolean;
 }
 
 export default function ProjectCard({
@@ -25,11 +26,24 @@ export default function ProjectCard({
   github,
   demo,
   tags,
+  isAwardWinner = false,
 }: ProjectCardProps) {
   const [isImageViewerOpen, setIsImageViewerOpen] = useState(false);
 
   return (
-    <div className="group bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300">
+    <div
+      className={`group bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 ${
+        isAwardWinner ? "ring-2 ring-yellow-400 ring-opacity-50" : ""
+      }`}
+    >
+      {/* Award Badge */}
+      {isAwardWinner && (
+        <div className="absolute top-4 left-4 z-10 bg-yellow-500 text-white px-3 py-1 rounded-full text-sm font-medium flex items-center gap-1 shadow-lg">
+          <Award className="w-4 h-4" />
+          Grant Winner
+        </div>
+      )}
+
       {/* Image Preview (clickable) */}
       <div
         className="relative h-64 w-full cursor-pointer"
@@ -54,7 +68,11 @@ export default function ProjectCard({
           {tags.map((tag) => (
             <span
               key={tag}
-              className="px-2 py-1 text-xs font-medium bg-blue-50 text-blue-600 rounded-full"
+              className={`px-2 py-1 text-xs font-medium rounded-full ${
+                tag === "Grant Winner"
+                  ? "bg-yellow-100 text-yellow-800 border border-yellow-300"
+                  : "bg-blue-50 text-blue-600"
+              }`}
             >
               {tag}
             </span>

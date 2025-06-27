@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { techIcons } from "@/lib/constants";
+import { Award, Trophy } from "lucide-react";
 
 export default function About() {
   return (
@@ -85,6 +86,30 @@ export default function About() {
                   music. I am always eager to learn new technologies and take on
                   challenging projects.
                 </p>
+
+                {/* Achievements Section */}
+                <div className="mb-8">
+                  <h3 className="text-2xl font-bold text-gray-800 mb-4 flex items-center gap-2">
+                    <Trophy className="w-6 h-6 text-yellow-500" />
+                    Achievements
+                  </h3>
+                  <div className="bg-gradient-to-r from-yellow-50 to-orange-50 rounded-lg p-4 border-l-4 border-yellow-400">
+                    <div className="flex items-start gap-3">
+                      <Award className="w-5 h-5 text-yellow-600 mt-0.5 flex-shrink-0" />
+                      <div>
+                        <h4 className="font-semibold text-gray-800">
+                          Development Grant Winner
+                        </h4>
+                        <p className="text-gray-600 text-sm mt-1">
+                          Awarded a development grant for the Real Estate
+                          Tokenization Platform - a blockchain-based solution
+                          that revolutionizes property investment through
+                          tokenization.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
 
                 <h3 className="text-2xl font-bold text-gray-800 mb-6">
                   Technical Stack

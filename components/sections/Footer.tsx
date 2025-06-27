@@ -17,23 +17,16 @@ export default function Footer() {
             </p>
             <div className="flex space-x-4">
               <a
-                href="https://github.com/yourusername"
+                href="https://github.com/samuel025"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-white/5 p-2 rounded-lg hover:bg-blue-600/10 hover:text-blue-400 transition-colors"
               >
                 <Github className="w-5 h-5" />
               </a>
+
               <a
-                href="https://linkedin.com/in/yourusername"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="bg-white/5 p-2 rounded-lg hover:bg-blue-600/10 hover:text-blue-400 transition-colors"
-              >
-                <Linkedin className="w-5 h-5" />
-              </a>
-              <a
-                href="https://twitter.com/yourusername"
+                href="https://twitter.com/0xuell"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-white/5 p-2 rounded-lg hover:bg-blue-600/10 hover:text-blue-400 transition-colors"
@@ -65,7 +58,7 @@ export default function Footer() {
             <h3 className="text-lg font-semibold mb-4">Contact Info</h3>
             <ul className="space-y-2 text-gray-400">
               <li>Lagos, Nigeria</li>
-              <li>sam_olayemi65@yahoo.com</li>
+              <li>samolayemi3@gmail.com</li>
               <li>+234 704 514 9800</li>
             </ul>
           </div>

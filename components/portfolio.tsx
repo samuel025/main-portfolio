@@ -5,7 +5,7 @@ const projects = [
   {
     title: "Real Estate Tokenization Platform",
     description:
-      "A blockchain based real estate platform where users can by shares of properties onchain.",
+      "🏆 GRANT WINNER FROM ARBITRUM - A blockchain-based real estate platform where users can buy shares of properties onchain. This innovative project was awarded a development grant for its potential to revolutionize property investment through tokenization.",
     image: "contract/1.png",
     images: [
       "/contract/3.png",
@@ -16,7 +16,8 @@ const projects = [
     gradient: "bg-gradient-to-br from-green-500 to-blue-600",
     github: "https://github.com/samuel025/Xuel-TokenizationPlatform",
     demo: "https://realestate-tokenization.vercel.app/",
-    tags: ["NextJS", "React", "ThirdWeb", "Arbitrum"],
+    tags: ["NextJS", "React", "ThirdWeb", "Arbitrum", "Grant Winner"],
+    isAwardWinner: true,
   },
   {
     title: "Online Cloth Store",
@@ -93,7 +94,7 @@ export default function Portfolio() {
 
         <div className="text-center mt-16">
           <a
-            href="https://github.com/yourusername"
+            href="https://github.com/samuel025"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center px-6 py-3 rounded-full bg-gray-900 text-white font-medium hover:bg-gray-800 transition-colors"

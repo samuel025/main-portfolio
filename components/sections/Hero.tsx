@@ -64,7 +64,7 @@ export default function Hero() {
       <div className="relative z-10 text-center max-w-4xl mx-auto">
         <div className="mb-6 inline-block">
           <span className="px-4 py-2 rounded-full border border-gray-500/30 text-gray-300 text-sm font-medium bg-white/5">
-            Welcome to my portfolio
+            🏆 Grant Winner • Welcome to my portfolio
           </span>
         </div>
         <h1 className="text-4xl md:text-7xl font-bold text-white mb-8 tracking-tight">
