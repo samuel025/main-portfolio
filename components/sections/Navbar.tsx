@@ -14,6 +14,11 @@ export default function Navbar() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  const handleResumeClick = () => {
+    // Opens the PDF in a new tab
+    window.open("/Olayemi_Samuel.pdf", "_blank");
+  };
+
   return (
     <nav
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
@@ -49,7 +54,10 @@ export default function Navbar() {
                 <span className="absolute left-0 bottom-0 w-0 h-0.5 bg-blue-500 transition-all duration-300 group-hover:w-full"></span>
               </a>
             ))}
-            <button className="px-6 py-2.5 rounded-full bg-blue-600 text-white text-sm font-medium transition-all hover:bg-blue-700 hover:shadow-lg hover:shadow-blue-500/30">
+            <button
+              onClick={handleResumeClick}
+              className="px-6 py-2.5 rounded-full bg-blue-600 text-white text-sm font-medium transition-all hover:bg-blue-700 hover:shadow-lg hover:shadow-blue-500/30"
+            >
               Resume
             </button>
           </div>
@@ -105,7 +113,10 @@ export default function Navbar() {
               {item}
             </a>
           ))}
-          <button className="w-full px-6 py-2.5 rounded-full bg-blue-600 text-white text-sm font-medium transition-all hover:bg-blue-700">
+          <button
+            onClick={handleResumeClick}
+            className="w-full px-6 py-2.5 rounded-full bg-blue-600 text-white text-sm font-medium transition-all hover:bg-blue-700"
+          >
             Resume
           </button>
         </div>
