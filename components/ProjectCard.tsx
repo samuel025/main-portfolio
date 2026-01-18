@@ -1,7 +1,7 @@
 "use client";
 import { useState } from "react";
 import Image from "next/image";
-import { ExternalLink, Github, Award } from "lucide-react";
+import { ExternalLink, Github } from "lucide-react";
 
 import "swiper/css";
 import "swiper/css/navigation";
@@ -36,14 +36,6 @@ export default function ProjectCard({
         isAwardWinner ? "ring-2 ring-yellow-400 ring-opacity-50" : ""
       }`}
     >
-      {/* Award Badge */}
-      {isAwardWinner && (
-        <div className="absolute top-4 left-4 z-10 bg-yellow-500 text-white px-3 py-1 rounded-full text-sm font-medium flex items-center gap-1 shadow-lg">
-          <Award className="w-4 h-4" />
-          Grant Winner
-        </div>
-      )}
-
       {/* Image Preview (clickable) */}
       <div
         className="relative h-64 w-full cursor-pointer"
