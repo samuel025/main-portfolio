@@ -1,6 +1,7 @@
 "use client";
 import { useState, useEffect } from "react";
 import { useMemo } from "react";
+import Image from "next/image";
 
 export default function Hero() {
   const [currentText, setCurrentText] = useState("");
@@ -10,7 +11,7 @@ export default function Hero() {
 
   const titles = useMemo(
     () => ["Backend Developer", "API developer", "Django Developer"],
-    []
+    [],
   );
 
   useEffect(() => {
@@ -27,7 +28,7 @@ export default function Hero() {
         setCurrentText((prev) =>
           isDeleting
             ? prev.slice(0, -1)
-            : currentTitle.slice(0, prev.length + 1)
+            : currentTitle.slice(0, prev.length + 1),
         );
       }
     }, typeSpeed);
@@ -42,26 +43,25 @@ export default function Hero() {
 
     return () => clearInterval(cursorInterval);
   }, []);
-  // ... typing effect useEffects ...
 
   return (
     <section className="relative min-h-screen w-full flex items-center justify-center px-6 overflow-hidden bg-black">
-      {/* Animated Background Pattern */}
+      {/* Optimized Background Image */}
       <div className="absolute inset-0 opacity-100">
-        <div
-          className="absolute inset-0"
-          style={{
-            backgroundImage: "url('/image.png')",
-            backgroundSize: "cover",
-            backgroundPosition: "center",
-            filter: "brightness(0.6)",
-          }}
+        <Image
+          src="/image.png"
+          alt="Hero background"
+          fill
+          priority // This makes it load immediately
+          quality={85}
+          className="object-cover brightness-[0.6]"
+          sizes="100vw"
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-black/40 to-black"></div>
+        <div className="absolute inset-0 bg-gradient-to-b from-black/40 to-black z-10"></div>
       </div>
 
       {/* Content */}
-      <div className="relative z-10 text-center max-w-4xl mx-auto">
+      <div className="relative z-20 text-center max-w-4xl mx-auto">
         <h1 className="text-4xl md:text-7xl font-bold text-white mb-8 tracking-tight">
           Hi, I&apos;m{" "}
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-white to-gray-400">
