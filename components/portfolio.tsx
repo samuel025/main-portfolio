@@ -3,6 +3,21 @@ import { Github } from "lucide-react";
 
 const projects = [
   {
+    title: "API Rate Limiter",
+    description:
+      "A robust and configurable API rate limiter designed to protect backend services from abuse and manage traffic effectively. Built for high performance and scalability.",
+    image: "ratelimit/Screenshot from 2026-05-06 17-05-12.png",
+    images: [
+      "/ratelimit/Screenshot from 2026-05-06 17-05-12.png",
+      "/ratelimit/Screenshot from 2026-05-06 17-05-31.png",
+      "/ratelimit/Screenshot from 2026-05-06 17-05-36.png",
+    ],
+    gradient: "bg-gradient-to-br from-indigo-500 to-purple-600",
+    github: "https://github.com/samuel025/RateLimiter",
+    demo: "#",
+    tags: ["Spring Boot", "Redis", "Java"],
+  },
+  {
     title: "Real Estate Tokenization Platform",
     description:
       "🏆 GRANT WINNER FROM ARBITRUM - A blockchain-based real estate platform where users can buy shares of properties onchain. This innovative project was awarded a development grant for its potential to revolutionize property investment through tokenization.",
@@ -71,16 +86,19 @@ const projects = [
 
 export default function Portfolio() {
   return (
-    <section id="work" className="py-20 px-6 bg-gray-50">
+    <section
+      id="work"
+      className="py-24 px-6 bg-[#0c0f12] border-t border-white/5"
+    >
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
-          <span className="text-blue-600 font-semibold tracking-wide uppercase text-sm">
+          <span className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 py-1.5 text-xs font-medium uppercase tracking-[0.2em] text-white/70 mb-4">
             Portfolio
           </span>
-          <h2 className="text-4xl font-bold text-gray-900 mt-2 mb-4">
+          <h2 className="text-4xl font-bold text-white mb-4">
             Featured Projects
           </h2>
-          <p className="text-gray-600 max-w-2xl mx-auto">
+          <p className="text-white/60 max-w-2xl mx-auto text-lg">
             Here are some of my recent works. Each project is carefully crafted
             with attention to detail and modern technologies.
           </p>
@@ -97,7 +115,7 @@ export default function Portfolio() {
             href="https://github.com/samuel025"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center px-6 py-3 rounded-full bg-gray-900 text-white font-medium hover:bg-gray-800 transition-colors"
+            className="inline-flex items-center px-8 py-3.5 rounded-full bg-white text-black font-semibold hover:bg-gray-200 transition-colors"
           >
             <Github className="w-5 h-5 mr-2" />
             View More on GitHub

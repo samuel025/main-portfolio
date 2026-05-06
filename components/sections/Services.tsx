@@ -53,11 +53,14 @@ const services = [
 
 export default function Services() {
   return (
-    <section id="services" className="py-20 px-6 bg-gray-50">
+    <section
+      id="services"
+      className="py-24 px-6 bg-[#0c0f12] border-t border-white/5"
+    >
       <div className="max-w-6xl mx-auto">
-        <div className="text-center mb-12">
-          <h2 className="text-3xl font-bold mb-4">My Services</h2>
-          <p className="text-gray-600 max-w-2xl mx-auto">
+        <div className="text-center mb-16">
+          <h2 className="text-3xl font-bold mb-4 text-white">My Services</h2>
+          <p className="text-white/60 max-w-2xl mx-auto text-lg">
             Specialized in building modern web applications with cutting-edge
             technologies
           </p>
@@ -67,34 +70,34 @@ export default function Services() {
           {services.map((service, index) => (
             <div
               key={index}
-              className="group relative overflow-visible rounded-2xl bg-white p-6 lg:p-8 transition-all duration-300 hover:shadow-xl"
+              className="group relative overflow-hidden rounded-3xl bg-white/5 border border-white/10 p-8 transition-all duration-300 hover:bg-white/10 hover:border-white/20"
             >
               <div className="relative z-10">
-                {/* Icon - reduced sizes */}
+                {/* Icon */}
                 <div
-                  className={`w-16 h-16 rounded-xl bg-gradient-to-br ${service.bgColor} p-3 mb-6 transition-transform duration-300 group-hover:scale-110`}
+                  className={`w-14 h-14 rounded-2xl bg-gradient-to-br ${service.bgColor} p-3 mb-6 transition-transform duration-300 group-hover:scale-110 flex items-center justify-center`}
                 >
                   {React.cloneElement(service.icon, {
-                    className: "w-10 h-10 text-gray-800",
+                    className: "w-8 h-8 text-white",
                   })}
                 </div>
 
-                {/* Content - adjusted text sizes */}
-                <h3 className="text-xl font-bold mb-3 group-hover:text-blue-600 transition-colors">
+                {/* Content */}
+                <h3 className="text-xl font-semibold mb-3 text-white">
                   {service.title}
                 </h3>
-                <div className="mb-6">
-                  <p className="text-gray-600 text-base whitespace-normal">
+                <div className="mb-8">
+                  <p className="text-white/60 text-base leading-relaxed">
                     {service.description}
                   </p>
                 </div>
 
-                {/* Features - reduced spacing */}
+                {/* Features */}
                 <ul className="space-y-3">
                   {service.features.map((feature, idx) => (
-                    <li key={idx} className="flex items-start gap-2">
+                    <li key={idx} className="flex items-start gap-3">
                       <svg
-                        className="w-4 h-4 text-blue-500 shrink-0 mt-1"
+                        className="w-4 h-4 text-emerald-400 shrink-0 mt-1"
                         fill="none"
                         stroke="currentColor"
                         viewBox="0 0 24 24"
@@ -106,18 +109,11 @@ export default function Services() {
                           d="M9 12l2 2 4-4"
                         />
                       </svg>
-                      <span className="text-gray-700 text-sm whitespace-normal">
-                        {feature}
-                      </span>
+                      <span className="text-white/70 text-sm">{feature}</span>
                     </li>
                   ))}
                 </ul>
               </div>
-
-              {/* Background Gradient - reduced size */}
-              <div
-                className={`absolute top-0 right-0 -mr-12 -mt-12 w-36 h-36 rounded-full bg-gradient-to-br ${service.bgColor} opacity-50 transition-all duration-500 group-hover:scale-150`}
-              />
             </div>
           ))}
         </div>
